@@ -1,7 +1,12 @@
 # 🧠 EEG Motor Activity Classifier – CNN vs. Random Forest
 
+[![smoke-test](https://github.com/muhammedfidann06/eeg-motor-classifier/actions/workflows/ci.yml/badge.svg)](https://github.com/muhammedfidann06/eeg-motor-classifier/actions/workflows/ci.yml)
+
 Detects **motor imagery (left hand / right hand / rest)** from EEG signals and compares
 a classical ML pipeline with a deep-learning model.
+
+> 🇩🇪 **Kurzbeschreibung:** Erkennung von Handbewegungen (links / rechts / Ruhe) aus EEG-Signalen.
+> Ein CNN (wie EEGNet) wird mit einem Random Forest verglichen – mit Kreuzvalidierung und ohne Data Leakage.
 
 | Approach | Input | Idea |
 |---|---|---|
