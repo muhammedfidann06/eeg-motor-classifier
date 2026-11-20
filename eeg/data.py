@@ -1,7 +1,5 @@
 """
 EEG-Daten: synthetisch (schnell) oder echt (PhysioNet, mit MNE).
-
-Kommentare auf Deutsch (Niveau A2).
 """
 from __future__ import annotations
 

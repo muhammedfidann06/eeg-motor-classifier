@@ -1,7 +1,7 @@
 # 🧠 EEG Motor Activity Classifier – CNN vs. Random Forest
 
 Detects **motor imagery (left hand / right hand / rest)** from EEG signals and compares
-a classical ML pipeline with a deep-learning model. Code comments are in **German (A2 level)**.
+a classical ML pipeline with a deep-learning model.
 
 | Approach | Input | Idea |
 |---|---|---|

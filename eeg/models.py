@@ -1,6 +1,5 @@
 """
 Zwei Modelle: Random Forest (klassisch) und ein kleines CNN (Deep Learning).
-Kommentare auf Deutsch (Niveau A2).
 """
 from __future__ import annotations
 

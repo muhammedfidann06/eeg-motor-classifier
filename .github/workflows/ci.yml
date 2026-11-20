@@ -1,0 +1,22 @@
+name: smoke-test
+
+on: [push, pull_request]
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Install (CPU-only PyTorch)
+        run: |
+          pip install torch --index-url https://download.pytorch.org/whl/cpu
+          pip install numpy scipy scikit-learn matplotlib
+      - name: Run a short comparison on synthetic EEG
+        run: python compare.py --folds 2 --epochs 5
+      - uses: actions/upload-artifact@v4
+        with:
+          name: results
+          path: results/

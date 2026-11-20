@@ -3,8 +3,6 @@ Vergleich: Random Forest vs. CNN für EEG-Bewegungserkennung.
 
     python compare.py                 # synthetische Daten (schnell)
     python compare.py --physionet     # echte Daten (braucht mne)
-
-Kommentare auf Deutsch (Niveau A2).
 """
 import argparse
 import json

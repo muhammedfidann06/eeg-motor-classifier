@@ -1,6 +1,5 @@
 """
 Merkmale (Features) für den Random Forest.
-Kommentare auf Deutsch (Niveau A2).
 """
 import numpy as np
 from scipy.signal import welch
