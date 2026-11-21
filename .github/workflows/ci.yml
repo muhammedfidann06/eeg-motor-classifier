@@ -13,7 +13,9 @@ jobs:
       - name: Install (CPU-only PyTorch)
         run: |
           pip install torch --index-url https://download.pytorch.org/whl/cpu
-          pip install numpy scipy scikit-learn matplotlib
+          pip install numpy scipy scikit-learn matplotlib pytest
+      - name: Unit tests
+        run: python -m pytest -q
       - name: Run a short comparison on synthetic EEG
         run: python compare.py --folds 2 --epochs 5
       - uses: actions/upload-artifact@v7
